@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4a148c;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.project {
+    background-color: white;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input[type="text"], form input[type="email"] {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 300px;
+}
+
+form input[type="submit"] {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
