@@ -1,112 +1,50 @@
-* {
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    background-color: #555;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ddd;
-}
-
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-h1, h2, h3 {
-    margin-bottom: 1rem;
-}
-
-.project {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-a {
-    color: #666;
-}
-
-a:hover {
-    color: #333;
 }
 
 .main-header {
-    padding-top: 50vh;
+    margin-bottom: 3rem;
 }
 
-.main-nav {
-    text-align: center;
-    margin-top: 2rem;
+.main-header h1 {
+    font-size: 2.5rem;
+    color: #0f0; /* Color neon */
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #0f0; /* The typwriter cursor */
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
 }
 
-.main-nav ul {
-    padding: 0;
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-.main-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0f0 }
 }
 
-.main-nav ul li a {
+.nav .nav-item .nav-link {
+    color: #0f0;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     padding: 10px 20px;
-    border: 2px solid #333;
     border-radius: 5px;
-    color: #333;
-    background-color: #fff;
-    transition: background-color 0.3s, color 0.3s;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
 }
 
-.main-nav ul li a:hover {
-    background-color: #333;
-    color: #fff;
+.nav .nav-item .nav-link:hover {
+    background-color: #0f0;
+    color: #000;
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
 }
